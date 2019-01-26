@@ -1,0 +1,2 @@
+class Cola < ApplicationRecord
+end

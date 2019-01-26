@@ -1,0 +1,27 @@
+<%= form_with(model: cola, local: true) do |form| %>
+  <% if cola.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(cola.errors.count, "error") %> prohibited this cola from being saved:</h2>
+
+      <ul>
+      <% cola.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :nombreCliente %>
+    <%= form.text_field :nombreCliente, id: :cola_nombreCliente %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cantidadPersonas %>
+    <%= form.number_field :cantidadPersonas, id: :cola_cantidadPersonas %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

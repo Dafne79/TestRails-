@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Ocupado:</strong>
+  <%= @mesa.ocupado %>
+</p>
+
+<p>
+  <strong>Integer:</strong>
+  <%= @mesa.integer %>
+</p>
+
+<p>
+  <strong>Numerosillas:</strong>
+  <%= @mesa.numeroSillas %>
+</p>
+
+<p>
+  <strong>Sillas:</strong>
+  <%= @mesa.sillas %>
+</p>
+
+<%= link_to 'Edit', edit_mesa_path(@mesa) %> |
+<%= link_to 'Back', mesas_path %>

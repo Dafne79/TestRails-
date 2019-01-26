@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ocupado: MyString
+  integer: MyString
+  numeroSillas: MyString
+  sillas: MyString
+
+two:
+  ocupado: MyString
+  integer: MyString
+  numeroSillas: MyString
+  sillas: MyString

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombrecliente:</strong>
+  <%= @cola.nombreCliente %>
+</p>
+
+<p>
+  <strong>Cantidadpersonas:</strong>
+  <%= @cola.cantidadPersonas %>
+</p>
+
+<%= link_to 'Edit', edit_cola_path(@cola) %> |
+<%= link_to 'Back', colas_path %>
